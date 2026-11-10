@@ -112,17 +112,6 @@ Create `backend/.env` with the following:
 ```env
 MONGODB_URI=mongodb+srv://<user>:<password>@<cluster>.mongodb.net/?appName=<AppName>
 MONGODB_DB=retailmind
-
-AZURE_OPENAI_ENDPOINT=https://<your-resource>.openai.azure.com/
-AZURE_OPENAI_API_KEY=<your-api-key>
-AZURE_OPENAI_DEPLOYMENT_NAME=gpt-4.1-mini
-AZURE_OPENAI_API_VERSION=2025-01-01-preview
-```
-
-If you have Azure Key Vault set up, add:
-
-```env
-AZURE_KEYVAULT_URL=https://<your-keyvault>.vault.azure.net/
 ```
 
 The app will automatically load secrets from Key Vault at startup and fall back to `.env` if Key Vault is not configured.
